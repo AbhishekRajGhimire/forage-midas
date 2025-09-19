@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:midas;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update   # create/update for tests; ops can switch in prod
+    show-sql: false
+  h2:
+    console:
+      enabled: true
